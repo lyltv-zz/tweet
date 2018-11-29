@@ -1,11 +1,21 @@
 from django.conf import settings
 from django.db import models
+<<<<<<< HEAD
 from django.urls import reverse_lazy
 # Create your models here.
 
 
 class UserProfileManager(models.Manager):
     user_for_related_fields = True
+=======
+from django.db.models.signals import post_save
+from django.urls import reverse_lazy
+
+# Create your models here.
+
+class UserProfileManager(models.Manager):
+    use_for_related_fields = True
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
 
     def all(self):
         qs = self.get_queryset().all()
@@ -17,7 +27,11 @@ class UserProfileManager(models.Manager):
         return qs
 
     def toggle_follow(self, user, to_toggle_user):
+<<<<<<< HEAD
         user_profile, created = UserProfile.objects.get_or_create(user=user)
+=======
+        user_profile, created = UserProfile.objects.get_or_create(user=user) # (user_obj, true)
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
         if to_toggle_user in user_profile.following.all():
             user_profile.following.remove(to_toggle_user)
             added = False
@@ -34,6 +48,18 @@ class UserProfileManager(models.Manager):
             return True
         return False
 
+<<<<<<< HEAD
+=======
+    def recommended(self, user, limit_to=10):
+        print(user)
+        profile = user.profile 
+        following = profile.following.all()
+        following = profile.get_following()
+        qs = self.get_queryset().exclude(user__in=following).exclude(id=profile.id).order_by("?")[:limit_to]
+        return qs
+
+
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
 
 class UserProfile(models.Model):
     user        = models.OneToOneField(settings.AUTH_USER_MODEL, related_name='profile') # user.profile 
@@ -41,17 +67,53 @@ class UserProfile(models.Model):
     # user.profile.following -- users i follow
     # user.followed_by -- users that follow me -- reverse relationship
 
+<<<<<<< HEAD
     objects = UserProfileManager()
 
     def get_following(self):
         users = self.following.all()
         return users.exclude(username=self.user.username)
+=======
+    objects = UserProfileManager() # UserProfile.objects.all()
+    # abc = UserProfileManager() # UserProfile.abc.all()
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
 
     def __str__(self):
         return str(self.following.all().count())
 
+<<<<<<< HEAD
+=======
+    def get_following(self):
+        users  = self.following.all() # User.objects.all().exclude(username=self.user.username)
+        return users.exclude(username=self.user.username)
+
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
     def get_follow_url(self):
         return reverse_lazy("profiles:follow", kwargs={"username":self.user.username})
 
     def get_absolute_url(self):
         return reverse_lazy("profiles:detail", kwargs={"username":self.user.username})
+<<<<<<< HEAD
+=======
+
+
+
+
+# cfe = User.objects.first()
+# User.objects.get_or_create() # (user_obj, true/false)
+# cfe.save()
+
+def post_save_user_receiver(sender, instance, created, *args, **kwargs):
+    if created:
+        new_profile = UserProfile.objects.get_or_create(user=instance)
+        # celery + redis
+        # deferred task
+
+post_save.connect(post_save_user_receiver, sender=settings.AUTH_USER_MODEL)
+
+
+
+
+
+
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f

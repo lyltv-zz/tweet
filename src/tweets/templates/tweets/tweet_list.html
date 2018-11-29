@@ -1,5 +1,9 @@
 {% extends "base.html" %}
+<<<<<<< HEAD
 
+=======
+{% load recommended %}
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
 <style>
 #tweet-container {
 
@@ -8,6 +12,7 @@
 
 {% block script %}
 <script>
+<<<<<<< HEAD
 
 function getParameterByName(name, url) {
     if (!url) {
@@ -157,6 +162,10 @@ $(document).ready(function(){
 
 
 
+=======
+$(document).ready(function(){
+  loadTweetContainer("tweet-container")
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
 });
 </script>
 {% endblock script %}
@@ -167,22 +176,42 @@ $(document).ready(function(){
 
    
     <div class='row'>
+<<<<<<< HEAD
         <div class='col-sm-3 col-xs-12' style='background-color:red;'>
         <h1>{{ request.user }}</h1>
         </div>
+=======
+        <div class='col-sm-3 col-xs-12'>
+        <h1>{{ request.user }}</h1>
+        <hr/>
+         <br/>
+        <p class='lead'>Recommended Users</p>
+        {% recommended request.user %}
+        </div>
+
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
         <div class='col-sm-9 '>
              {% if not request.GET.q %}
                 <div class=''>
                     
+<<<<<<< HEAD
                     {% include "tweets/form.html" with form=create_form action_url=create_url btn_title='Tweet' form_id='tweet-form' %}
+=======
+                    {% include "tweets/form.html" with form=create_form action_url=create_url btn_title='Tweet' form_class='tweet-form' %}
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
 
                 </div>
                 <hr/>
             {% endif %}
 
+<<<<<<< HEAD
           <div id='tweet-container'>
 
 
+=======
+          <div id='tweet-container' data-url='/api/tweet/'>
+            
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
           </div>
           <a href='#' id='loadmore'>Load More Tweets</a>
 

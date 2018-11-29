@@ -3,7 +3,11 @@ import os
 import sys
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tweetme.settings.local")
+=======
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "tweetme.settings")
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
     try:
         from django.core.management import execute_from_command_line
     except ImportError:

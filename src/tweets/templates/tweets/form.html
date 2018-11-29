@@ -1,5 +1,9 @@
 {% load crispy_forms_tags %}
+<<<<<<< HEAD
 <form {% if form_id %} id='{{ form_id }}' {% endif %}class='form' method='POST' action="{% if action_url %}{{ action_url }}{% endif %}">
+=======
+<form class='form {% if form_class %}{{ form_class }}{% endif %}' method='POST' action="{% if action_url %}{{ action_url }}{% endif %}">
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
    {% csrf_token %}
     {{ form|crispy }}
     <input class='btn btn-primary' type="submit" value="{{ btn_title }}" />

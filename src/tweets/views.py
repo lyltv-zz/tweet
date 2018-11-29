@@ -1,7 +1,14 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Q
+<<<<<<< HEAD
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy
+=======
+from django.shortcuts import render, get_object_or_404, redirect
+from django.http import HttpResponseRedirect
+from django.urls import reverse_lazy
+from django.views import View
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
 from django.views.generic import (
                 CreateView,
                 DetailView,
@@ -14,12 +21,28 @@ from .forms import TweetModelForm
 from .mixins import FormUserNeededMixin, UserOwnerMixin
 from .models import Tweet
 
+<<<<<<< HEAD
 
 class TweetCreateView(LoginRequiredMixin, FormUserNeededMixin, CreateView):
     form_class = TweetModelForm
     template_name = 'tweets/create_view.html'
     #success_url = reverse_lazy("tweet:detail")
     login_url = "/admin/"
+=======
+class RetweetView(View):
+    def get(self, request, pk, *args, **kwargs):
+        tweet = get_object_or_404(Tweet, pk=pk)
+        if request.user.is_authenticated():
+            new_tweet = Tweet.objects.retweet(request.user, tweet)
+            return HttpResponseRedirect("/")
+        return HttpResponseRedirect(tweet.get_absolute_url())
+
+
+class TweetCreateView(FormUserNeededMixin, CreateView):
+    form_class = TweetModelForm
+    template_name = 'tweets/create_view.html'
+    #success_url = reverse_lazy("tweet:detail")
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
 
 
 class TweetUpdateView(LoginRequiredMixin, UserOwnerMixin, UpdateView):
@@ -35,11 +58,19 @@ class TweetDeleteView(LoginRequiredMixin, DeleteView):
     success_url = reverse_lazy("tweet:list") #reverse()
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
 class TweetDetailView(DetailView):
     queryset = Tweet.objects.all()
 
 
+<<<<<<< HEAD
 class TweetListView(ListView):
+=======
+class TweetListView(LoginRequiredMixin, ListView):
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
     
     def get_queryset(self, *args, **kwargs):
         qs = Tweet.objects.all()

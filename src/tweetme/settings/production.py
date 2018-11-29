@@ -42,6 +42,10 @@ INSTALLED_APPS = [
     'rest_framework',
     
     'accounts',
+<<<<<<< HEAD
+=======
+     'hashtags',
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
     'tweets',
 ]
 
@@ -56,6 +60,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'tweetme.urls'
+<<<<<<< HEAD
+=======
+LOGIN_URL = "/login/"
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = LOGIN_REDIRECT_URL
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
 
 TEMPLATES = [
     {
@@ -80,6 +90,7 @@ WSGI_APPLICATION = 'tweetme.wsgi.application'
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
 DATABASES = {
+<<<<<<< HEAD
       'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'tweet',
@@ -87,6 +98,11 @@ DATABASES = {
         'PASSWORD': '123456',
         'HOST': 'localhost',
         'PORT': '',
+=======
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+>>>>>>> 95749ba6f1abb5428cb20106f9298bddb642af6f
     }
 }
 

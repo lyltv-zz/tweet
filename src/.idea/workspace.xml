@@ -2,17 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d451034-0460-4bf9-87ed-421a0fa21e11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../requirements/archive.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../requirements/archive__2017-10-04__1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../requirements/archive__2017-10-04__2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../requirements/archive__2017-10-04__3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../requirements/archive__2017-10-04__4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../requirements/archive__2017-10-04__5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../requirements/archive__2017-10-04__6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../requirements/archive__2017-10-04__7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/api/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/snippets/recommend.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templates/accounts/user_register_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templates/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templatetags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/accounts/templatetags/recommended.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/api/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/templates/hashtags/tag_view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hashtags/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/reply-modal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tweets/migrations/0007_tweet_parent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tweets/migrations/0008_tweet_liked.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tweets/migrations/0009_tweet_reply.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../upgrade_pip.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/api/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/user_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/user_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweetme/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweetme/settings/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweetme/settings/local.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweetme/settings/local.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweetme/settings/production.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweetme/settings/production.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweetme/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweetme/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweetme/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweetme/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweets/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweets/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweets/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweets/api/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tweets/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweets/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweets/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweets/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweets/templates/tweets/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/tweets/templates/tweets/form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweets/templates/tweets/search_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/tweets/templates/tweets/search_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweets/templates/tweets/tweet_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/tweets/templates/tweets/tweet_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweets/templates/tweets/tweet_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/tweets/templates/tweets/tweet_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweets/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweets/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tweets/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tweets/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tweetme.sublime-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/../tweetme.sublime-workspace" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tweetme/settings/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+            <state relative-caret-position="1455">
+              <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -35,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/tweetme/settings/local.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1187">
-              <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+              <caret line="105" column="5" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -44,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/tweetme/settings/production.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="277">
-              <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+              <caret line="146" selection-start-line="146" selection-end-line="146" />
             </state>
           </provider>
         </entry>
@@ -68,8 +121,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/accounts/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+            <state relative-caret-position="75">
+              <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -111,7 +164,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="177" />
+    <option name="x" value="181" />
     <option name="y" value="138" />
     <option name="width" value="1420" />
     <option name="height" value="682" />
@@ -214,12 +267,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="177" y="138" width="1420" height="682" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.33954155" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.4506579" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" visible="true" weight="0.22920518" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
@@ -334,22 +388,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tweetme/settings/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="86" column="24" lean-forward="true" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+        <state relative-caret-position="1455">
+          <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tweetme/settings/local.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1187">
-          <caret line="90" column="5" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+          <caret line="105" column="5" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tweetme/settings/production.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
-          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
         </state>
       </provider>
     </entry>
@@ -367,8 +421,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+        <state relative-caret-position="75">
+          <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
