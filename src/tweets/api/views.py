@@ -11,6 +11,7 @@ from .serializers import TweetModelSerializer
 class TweetCreateAPIView(generics.CreateAPIView):
     serializer_class = TweetModelSerializer
     permission_classes = [permissions.IsAuthenticated]
+    login_url = '/admin/'
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
